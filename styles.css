@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Trade Gothic Next Regular";
+  src: url("./Typeface/TradeGothicNextLTPro-Rg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Trade Gothic Next Bold";
+  src: url("./Typeface/TradeGothicNextLTPro-Bd.otf") format("opentype");
+}
+@font-face {
+  font-family: "Trade Gothic Next Heavy";
+  src: url("./Typeface/TradeGothicNextLTPro-Hv.otf") format("opentype");
+}
+
+:root {
+  --background-clr: #eae6e5;
+  --main-clr: #d2222c;
+  --black: #2e2e2c;
+  --heavy-font: "Trade Gothic Next Heavy";
+  --bold-font: "Trade Gothic Next Bold";
+  --regular-font: "Trade Gothic Next Regular";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-clr);
+}
+
+h1 {
+  font-family: var(--bold-font);
+  letter-spacing: -1.5px;
+  color: var(--black);
+}
+
+h2 {
+  font-family: var(--heavy-font);
+  color: var(--background-clr);
+}
+
+label {
+  position: relative;
+  top: -1.5rem;
+  font-family: var(--bold-font);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.nasa-title {
+  max-width: 12rem;
+}
+
+.nasa-logo {
+  display: flex;
+  width: 195px;
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.dividing-bar {
+  margin-top: 1rem;
+  height: 4px;
+  width: 35vw;
+  background: var(--black);
+}
+
+.rover-icon {
+  position: relative;
+  left: 12rem;
+  top: 2rem;
+  width: 4rem;
+}
+
+#rovers {
+  position: relative;
+  top: -1rem;
+  max-width: 10rem;
+  font-family: var(--regular-font);
+  color: var(--black);
+  border: none;
+  background: #f8f9fa;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+.photo-card {
+  background: var(--background-clr);
+  height: 520px;
+  width: 380px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.photo-card h2 {
+  color: var(--black);
+}
+
+.photo-card h3 {
+  font-family: var(--bold-font);
+  color: var(--black);
+}
+
+.photo-card h4 {
+  font-family: var(--regular-font);
+  font-size: 0.8rem;
+  color: var(--black);
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.card-info {
+  padding-left: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.num-btn {
+  font-family: var(--bold-font);
+  font-size: 1rem;
+  height: 1rem;
+  width: 1rem;
+  margin: 2rem 0.5rem;
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.next-btn {
+  font-family: var(--bold-font);
+  font-size: 1rem;
+  border-color: transparent;
+  background: transparent;
+  text-transform: capitalize;
+  margin: 2rem;
+  cursor: pointer;
+}
+.prev-btn {
+  font-family: var(--bold-font);
+  font-size: 1rem;
+  border-color: transparent;
+  background: transparent;
+  text-transform: capitalize;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.active-btn {
+  color: var(--main-clr);
+}
+
+.hide {
+  visibility: hidden;
+}
